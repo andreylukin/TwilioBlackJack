@@ -9,6 +9,8 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
+:w
+:set paste
 :q
 :Q
 
@@ -21,29 +23,94 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+"0	LINE	0
+	    print(request.values.get('From'), file=sys.stderr)
+"1	LINE	0
+	SECRET_KEY = "HELLOAAKI"
+"2	LINE	0
+	    counter = session.get('counter', 0)
+"3	LINE	0
+	    counter +=1
+"4	LINE	0
+	    session['counter'] = counter
+"5	LINE	0
+	    print(str(session), file=sys.stderr)
+"6	BLOCK	0
+	#
+	#
+	#
+	#
+	#
+	#
+"7	LINE	0
+	
+"8	LINE	0
+	
+"9	LINE	0
+	
 ""-	CHAR	0
-	pregnant
+	Session number is
 
 # File marks:
-'0  14  21  ~/send_sms.py
-'1  12  18  ~/send_sms.py
-'2  11  64  ~/receive_sms.py
-'3  3  5  ~/receive_sms.py
-'4  16  19  ~/receive_sms.py
-'5  12  18  ~/sms.py
-'6  11  14  ~/sms.py
-'7  13  5  ~/sms.py
-'8  15  0  ~/atom.py
-'9  1  0  ~/.ssh/authorized_keys
+'0  36  83  ~/send_random_card.py
+'1  13  22  ~/send_random_card.py
+'2  28  21  ~/send_random_card.py
+'3  28  3  ~/send_random_card.py
+'4  6  23  ~/send_random_card.py
+'5  29  5  ~/send_random_card.py
+'6  1  0  ~/send_random_card.py
+'7  27  33  ~/send_random_card.py
+'8  14  10  ~/send_sms.py
+'9  16  11  ~/send_sms.py
 
 # Jumplist (newest first):
--'  14  21  ~/send_sms.py
+-'  36  83  ~/send_random_card.py
+-'  1  0  ~/send_random_card.py
+-'  13  22  ~/send_random_card.py
+-'  28  21  ~/send_random_card.py
+-'  4  0  ~/send_random_card.py
+-'  6  23  ~/send_random_card.py
+-'  29  5  ~/send_random_card.py
+-'  27  33  ~/send_random_card.py
+-'  14  10  ~/send_sms.py
 -'  1  0  ~/send_sms.py
--'  12  18  ~/send_sms.py
--'  11  64  ~/receive_sms.py
+-'  16  11  ~/send_sms.py
+-'  15  9  ~/send_sms.py
+-'  1  0  ~/send_
+-'  17  0  ~/send_sms.py
+-'  34  4  ~/send_random_card.py
+-'  35  4  ~/send_random_card.py
+-'  37  0  ~/send_random_card.py
+-'  21  0  ~/send_random_card.py
+-'  11  0  ~/send_random_card.py
+-'  42  22  ~/send_random_card.py
+-'  1  0  ~/respond_sms.py
+-'  1  0  ~/send_random_card
+-'  16  10  ~/redditapi.py
+-'  1  0  ~/redditapi.py
+-'  14  19  ~/redditapi.py
+-'  13  15  ~/redditapi.py
+-'  1  0  ~/re
+-'  10  0  ~/redditapi.py
+-'  7  79  ~/redditapi.py
+-'  20  0  ~/respond_sms.py
+-'  15  4  ~/respond_sms.py
+-'  18  12  ~/respond_sms.py
+-'  6  42  ~/receive_sms.py
 -'  1  0  ~/receive_sms.py
+-'  13  14  ~/send_sms.py
+-'  6  13  ~/send_sms.py
+-'  8  12  ~/incoming_message.py
+-'  1  0  ~/incoming_message.py
+-'  9  20  ~/incoming_message.py
+-'  14  22  ~/incoming_message.py
+-'  1  0  ~/ri
+-'  28  16  ~/send_sms.py
+-'  28  23  ~/receive_sms.py
+-'  30  21  ~/send_sms.py
+-'  25  64  ~/receive_sms.py
 -'  3  5  ~/receive_sms.py
--'  16  19  ~/receive_sms.py
+-'  34  19  ~/receive_sms.py
 -'  12  18  ~/sms.py
 -'  1  0  ~/sms.py
 -'  11  14  ~/sms.py
@@ -93,76 +160,239 @@
 -'  1  0  ~/.ssh/authorized_keys
 -'  1  0  ~/.ssh/authorized_keys
 -'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  12  18  ~/sms.py
--'  1  0  ~/sms.py
--'  11  14  ~/sms.py
--'  13  5  ~/sms.py
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
 
 # History of marks within files (newest to oldest):
 
+> ~/send_random_card.py
+	"	36	83
+	^	36	103
+	.	36	84
+	+	42	0
+	+	12	0
+	+	11	0
+	+	10	0
+	+	10	0
+	+	14	0
+	+	14	0
+	+	17	25
+	+	18	20
+	+	19	17
+	+	18	6
+	+	36	0
+	+	36	0
+	+	36	32
+	+	36	40
+	+	36	61
+	+	36	0
+	+	35	0
+	+	9	0
+	+	9	36
+	+	35	37
+	+	35	36
+	+	35	4
+	+	9	0
+	+	1	0
+	+	4	0
+	+	18	13
+	+	1	0
+	+	35	0
+	+	36	82
+	+	2	10
+	+	2	10
+	+	3	0
+	+	27	33
+	+	4	50
+	+	32	0
+	+	29	3
+	+	4	56
+	+	29	62
+	+	29	19
+	+	29	70
+	+	29	35
+	+	29	0
+	+	29	52
+	+	29	70
+	+	32	4
+	+	33	4
+	+	35	4
+	+	36	4
+	+	34	5
+	+	29	5
+	+	6	0
+	+	4	41
+	+	29	4
+	+	28	16
+	+	4	50
+	+	28	21
+	+	36	120
+	+	29	38
+	+	29	0
+	+	29	3
+	+	31	3
+	+	29	11
+	+	30	31
+	+	13	22
+	+	28	0
+	+	30	0
+	+	29	0
+	+	13	0
+	+	36	84
+
 > ~/send_sms.py
-	"	14	21
-	^	14	22
-	.	14	21
+	"	14	10
+	^	14	10
+	.	14	9
+	+	30	21
+	+	28	16
+	+	30	21
+	+	28	6
+	+	30	34
+	+	28	16
+	+	30	33
+	+	28	17
+	+	11	40
+	+	13	22
+	+	16	20
+	+	14	19
+	+	15	21
+	+	16	18
+	+	15	21
+	+	17	0
+	+	5	49
+	+	6	13
+	+	13	14
+	+	17	7
+	+	16	94
+	+	14	16
+	+	17	0
+	+	8	6
+	+	15	0
+	+	14	4
+	+	8	0
+	+	14	7
+	+	9	23
+	+	10	21
+	+	14	9
+	+	16	11
+	+	14	9
+
+> ~/send_
+	"	1	0
+
+> ~/redditapi.py
+	"	1	0
+	^	6	20
+	.	15	6
+	+	7	69
+	+	10	16
+	+	10	14
+	+	7	45
+	+	10	5
+	+	10	14
+	+	3	19
+	+	5	0
+	+	10	0
+	+	7	79
+	+	7	79
+	+	10	12
+	+	7	87
+	+	10	8
+	+	10	0
+	+	10	0
+	+	13	81
+	+	19	0
+	+	13	61
+	+	10	0
+	+	9	19
+	+	10	12
+	+	13	94
+	+	14	0
+	+	13	84
 	+	14	21
-	+	12	16
-	+	14	21
-	+	12	6
-	+	14	34
-	+	12	16
-	+	14	21
+	+	17	9
+	+	13	14
+	+	14	19
+	+	17	11
+	+	15	0
+	+	14	20
+	+	15	21
+	+	17	12
+	+	15	21
+	+	14	22
+	+	7	0
+	+	6	18
+	+	17	0
+	+	16	16
+	+	17	20
+	+	6	19
+	+	15	6
+
+> ~/respond_sms.py
+	"	1	0
+	^	20	20
+	.	14	0
+	+	18	12
+	+	15	22
+	+	2	69
+	+	22	22
+	+	17	19
+	+	18	7
+	+	20	19
+	+	14	0
+
+> ~/send_random_card
+	"	1	0
+
+> ~/re
+	"	1	0
 
 > ~/receive_sms.py
-	"	11	64
-	^	11	65
-	.	11	64
+	"	6	42
+	^	14	0
+	.	6	0
 	+	6	21
-	+	8	43
-	+	11	35
-	+	10	7
-	+	13	17
-	+	15	26
-	+	16	18
+	+	25	43
+	+	25	35
+	+	25	7
+	+	27	17
+	+	33	26
+	+	34	18
 	+	3	5
-	+	11	64
+	+	25	64
+	+	25	40
+	+	25	0
+	+	25	0
+	+	25	20
+	+	26	19
+	+	31	0
+	+	29	0
+	+	27	15
+	+	25	13
+	+	27	20
+	+	28	27
+	+	28	24
+	+	25	0
+	+	24	22
+	+	6	0
+
+> ~/incoming_message.py
+	"	8	12
+	^	8	13
+	.	8	12
+	+	1	42
+	+	1	32
+	+	14	0
+	+	8	10
+	+	11	0
+	+	9	41
+	+	9	20
+	+	1	41
+	+	9	0
+	+	10	38
+	+	8	12
+
+> ~/ri
+	"	1	0
 
 > ~/sms.py
 	"	12	18

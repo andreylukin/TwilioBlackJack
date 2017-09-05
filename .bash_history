@@ -126,3 +126,21 @@ find -name "ngrok"
 cd
 ngrok version
 ./ngrok http 5000
+ls
+git add .
+git status
+git commit -m "Set up basic sending text and accepting text"
+git push origin master
+git status
+./ngrok http 5000
+vim receive_sms.py 
+vim send_sms.py 
+python send_sms.py 
+vim receive_sms.py 
+vim incoming_message.py
+ls
+python receive_sms.py 
+python incoming_message.py 
+sudo shutdown -r now
+./ngrok http 5000
+./ngrok http 5000
