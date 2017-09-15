@@ -7,14 +7,19 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/print
+
 # Command Line History (newest to oldest):
-:wq
+:q
 :w
 :set paste
-:q
+:wq
+:WQ
 :Q
 
 # Search String History (newest to oldest):
+?/print
 
 # Expression History (newest to oldest):
 
@@ -24,67 +29,101 @@
 
 # Registers:
 "0	LINE	0
-	    print(request.values.get('From'), file=sys.stderr)
-"1	LINE	0
-	SECRET_KEY = "HELLOAAKI"
+		message.media(randomCard['image_url'])
+""1	LINE	0
+		message.media(randomCard['image_url'])
 "2	LINE	0
-	    counter = session.get('counter', 0)
+		message.media()
 "3	LINE	0
-	    counter +=1
+	        print(deckOfCurrentUser, file=sys.stderr)
 "4	LINE	0
-	    session['counter'] = counter
+	        print(connectToDB("SELECT * FROM tb_entity WHERE phone ilike '" + from_  + "';"), file=sys.stderr)
 "5	LINE	0
-	    print(str(session), file=sys.stderr)
-"6	BLOCK	0
+	        print(from_, file=sys.stderr)
+"6	LINE	0
+	        print(connectToDB("SELECT * FROM tb_entity WHERE phone ilike '" + from_  + "';"), file=sys.stderr)
+"7	BLOCK	0
 	#
 	#
 	#
 	#
 	#
 	#
-"7	LINE	0
-	
+	#
+	#
+	#
 "8	LINE	0
-	
+		deck_id = r['deck_id']
 "9	LINE	0
-	
-""-	CHAR	0
-	Session number is
+		r = requests.get('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1').json()
+"-	CHAR	0
+	"https://deckofcardsapi.com/api/deck/" + deck_id + "/draw/?count=1"
 
 # File marks:
-'0  36  83  ~/send_random_card.py
-'1  13  22  ~/send_random_card.py
-'2  28  21  ~/send_random_card.py
-'3  28  3  ~/send_random_card.py
-'4  6  23  ~/send_random_card.py
-'5  29  5  ~/send_random_card.py
-'6  1  0  ~/send_random_card.py
-'7  27  33  ~/send_random_card.py
-'8  14  10  ~/send_sms.py
-'9  16  11  ~/send_sms.py
+'0  1  0  ~/ngrok.txt
+'1  29  8  ~/send_random_card.py
+'2  69  38  ~/send_random_card.py
+'3  1  0  ~/send_random_card.py
+'4  1  0  ~/pythonpsql.py
+'5  23  9  ~/send_random_card.py
+'6  49  3  ~/send_random_card.py
+'7  22  20  ~/send_random_card.py
+'8  1  0  ~/send_
+'9  15  0  ~/respond_sms.py
 
 # Jumplist (newest first):
--'  36  83  ~/send_random_card.py
+-'  1  0  ~/ngrok.txt
+-'  29  8  ~/send_random_card.py
+-'  10  0  ~/send_random_card.py
+-'  9  11  ~/send_random_card.py
+-'  55  0  ~/send_random_card.py
 -'  1  0  ~/send_random_card.py
--'  13  22  ~/send_random_card.py
--'  28  21  ~/send_random_card.py
+-'  69  38  ~/send_random_card.py
+-'  68  8  ~/send_random_card.py
+-'  59  6  ~/send_random_card.py
+-'  56  0  ~/send_random_card.py
+-'  51  86  ~/send_random_card.py
+-'  52  54  ~/send_random_card.py
+-'  49  45  ~/send_random_card.py
+-'  19  18  ~/send_random_card.py
+-'  1  0  ~/pythonpsql.py
+-'  23  9  ~/send_random_card.py
+-'  47  51  ~/send_random_card.py
+-'  22  20  ~/send_random_card.py
+-'  1  0  ~/send_
+-'  15  0  ~/respond_sms.py
+-'  1  0  ~/respond_sms.py
+-'  5  36  ~/pythonpsql.py
+-'  1  0  ~/pt
+-'  4  34  ~/pythonpsql.py
+-'  11  48  ~/pythonpsql.py
+-'  12  6  ~/pythonpsql.py
+-'  1  0  ~/y.pub
+-'  1  0  ~/app.py
+-'  1  0  ~/mode
+-'  1  0  ~/config.py
+-'  5  50  ~/app.py
+-'  2  10  ~/app.py
+-'  7  19  ~/app.py
+-'  12  63  ~/psqltry.py
+-'  1  0  ~/psqltry.py
+-'  5  0  ~/psqltry.py
+-'  66  83  ~/send_random_card.py
+-'  34  22  ~/send_random_card.py
+-'  58  21  ~/send_random_card.py
 -'  4  0  ~/send_random_card.py
 -'  6  23  ~/send_random_card.py
--'  29  5  ~/send_random_card.py
--'  27  33  ~/send_random_card.py
+-'  57  33  ~/send_random_card.py
 -'  14  10  ~/send_sms.py
 -'  1  0  ~/send_sms.py
 -'  16  11  ~/send_sms.py
 -'  15  9  ~/send_sms.py
--'  1  0  ~/send_
 -'  17  0  ~/send_sms.py
--'  34  4  ~/send_random_card.py
--'  35  4  ~/send_random_card.py
--'  37  0  ~/send_random_card.py
--'  21  0  ~/send_random_card.py
+-'  64  4  ~/send_random_card.py
+-'  65  4  ~/send_random_card.py
+-'  43  0  ~/send_random_card.py
 -'  11  0  ~/send_random_card.py
--'  42  22  ~/send_random_card.py
--'  1  0  ~/respond_sms.py
+-'  75  22  ~/send_random_card.py
 -'  1  0  ~/send_random_card
 -'  16  10  ~/redditapi.py
 -'  1  0  ~/redditapi.py
@@ -94,7 +133,6 @@
 -'  10  0  ~/redditapi.py
 -'  7  79  ~/redditapi.py
 -'  20  0  ~/respond_sms.py
--'  15  4  ~/respond_sms.py
 -'  18  12  ~/respond_sms.py
 -'  6  42  ~/receive_sms.py
 -'  1  0  ~/receive_sms.py
@@ -125,118 +163,222 @@
 -'  1  0  ~/.ssh/authorized_keys
 -'  15  0  ~/atom.py
 -'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
--'  1  0  ~/atom.py
--'  1  0  ~/.ssh/authorized_keys
--'  1  0  ~/.ssh/authorized_keys
--'  15  0  ~/atom.py
+-'  54  0  ~/send_random_card.py
+-'  50  54  ~/send_random_card.py
+-'  29  8  ~/send_random_card.py
+-'  10  0  ~/send_random_card.py
+-'  9  11  ~/send_random_card.py
+-'  55  0  ~/send_random_card.py
+-'  1  0  ~/send_random_card.py
 
 # History of marks within files (newest to oldest):
 
+> ~/ngrok.txt
+	"	1	0
+
 > ~/send_random_card.py
-	"	36	83
-	^	36	103
-	.	36	84
-	+	42	0
-	+	12	0
-	+	11	0
-	+	10	0
-	+	10	0
-	+	14	0
-	+	14	0
-	+	17	25
-	+	18	20
-	+	19	17
-	+	18	6
-	+	36	0
-	+	36	0
-	+	36	32
-	+	36	40
-	+	36	61
-	+	36	0
-	+	35	0
-	+	9	0
-	+	9	36
-	+	35	37
-	+	35	36
-	+	35	4
-	+	9	0
-	+	1	0
-	+	4	0
-	+	18	13
-	+	1	0
-	+	35	0
-	+	36	82
-	+	2	10
-	+	2	10
-	+	3	0
-	+	27	33
-	+	4	50
-	+	32	0
-	+	29	3
-	+	4	56
-	+	29	62
-	+	29	19
-	+	29	70
-	+	29	35
-	+	29	0
-	+	29	52
-	+	29	70
-	+	32	4
-	+	33	4
-	+	35	4
-	+	36	4
-	+	34	5
-	+	29	5
-	+	6	0
-	+	4	41
-	+	29	4
-	+	28	16
-	+	4	50
-	+	28	21
-	+	36	120
-	+	29	38
-	+	29	0
-	+	29	3
-	+	31	3
-	+	29	11
-	+	30	31
-	+	13	22
-	+	28	0
+	"	29	8
+	.	71	0
+	+	49	0
+	+	48	0
+	+	47	0
+	+	50	80
+	+	49	5
+	+	52	2
+	+	38	9
 	+	30	0
-	+	29	0
+	+	30	0
+	+	31	0
+	+	33	0
+	+	32	14
+	+	35	21
+	+	38	0
+	+	35	24
+	+	52	105
+	+	50	87
+	+	52	110
+	+	54	0
+	+	59	0
+	+	61	0
+	+	52	65
+	+	50	90
+	+	50	4
+	+	50	92
+	+	63	0
+	+	59	0
+	+	69	41
+	+	24	8
+	+	50	1
+	+	52	2
+	+	51	0
+	+	51	0
+	+	51	36
+	+	9	14
+	+	51	52
+	+	15	0
+	+	19	0
+	+	21	0
+	+	20	23
+	+	26	81
+	+	69	34
+	+	67	98
+	+	68	32
+	+	69	1
+	+	67	96
+	+	68	18
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	84
+	+	51	0
+	+	68	21
+	+	68	19
+	+	49	45
+	+	51	82
+	+	68	30
+	+	51	0
+	+	51	18
+	+	49	45
+	+	52	68
+	+	51	59
+	+	52	54
+	+	51	83
+	+	51	73
+	+	52	67
+	+	49	0
+	+	52	0
+	+	49	48
+	+	24	25
+	+	51	8
+	+	51	86
+	+	67	101
+	+	51	0
+	+	69	1
+	+	41	11
+	+	38	9
+	+	39	17
+	+	40	13
+	+	41	47
+	+	42	34
+	+	41	34
+	+	42	56
+	+	69	61
+	+	68	44
+	+	69	24
+	+	71	129
+	+	69	38
+	+	9	14
+	+	10	0
+	+	68	0
+	+	36	6
+	+	38	26
+	+	36	7
+	+	38	28
+	+	37	9
+	+	50	43
+	+	71	0
+	+	70	0
+	+	71	0
+
+> ~/pythonpsql.py
+	"	1	0
+	^	12	78
+	.	12	77
+	+	18	12
+	+	5	29
+	+	4	52
 	+	13	0
-	+	36	84
+	+	12	18
+	+	16	0
+	+	12	48
+	+	5	29
+	+	4	28
+	+	4	42
+	+	5	36
+	+	12	94
+	+	16	7
+	+	7	0
+	+	9	0
+	+	8	25
+	+	16	0
+	+	14	0
+	+	15	0
+	+	12	72
+	+	13	2
+	+	12	31
+	+	14	0
+	+	15	0
+	+	12	77
+
+> ~/respond_sms.py
+	"	1	3
+	^	20	20
+	.	14	0
+	+	18	12
+	+	15	22
+	+	2	69
+	+	22	22
+	+	17	19
+	+	18	7
+	+	20	19
+	+	14	0
+
+> ~/send_
+	"	1	0
+
+> ~/pt
+	"	1	0
+
+> ~/y.pub
+	"	1	0
+
+> ~/app.py
+	"	1	0
+	^	5	51
+	.	6	0
+	+	7	0
+	+	2	10
+	+	5	51
+	+	6	0
+
+> ~/models.py
+	"	16	1
+	^	1	23
+	.	17	0
+	+	4	21
+	+	10	24
+	+	11	26
+	+	12	51
+	+	13	52
+	+	14	28
+	+	13	40
+	+	14	43
+	+	15	37
+	+	16	41
+	+	17	69
+	+	1	22
+	+	17	0
+
+> ~/mode
+	"	1	0
+
+> ~/config.py
+	"	1	0
+	^	1	49
+	.	1	48
+	+	1	0
+	+	2	0
+	+	1	48
+
+> ~/psqltry.py
+	"	12	63
+	^	12	64
+	.	13	0
+	+	4	0
+	+	12	64
+	+	6	21
+	+	8	19
+	+	13	0
 
 > ~/send_sms.py
 	"	14	10
@@ -275,9 +417,6 @@
 	+	14	9
 	+	16	11
 	+	14	9
-
-> ~/send_
-	"	1	0
 
 > ~/redditapi.py
 	"	1	0
@@ -326,19 +465,6 @@
 	+	17	20
 	+	6	19
 	+	15	6
-
-> ~/respond_sms.py
-	"	1	0
-	^	20	20
-	.	14	0
-	+	18	12
-	+	15	22
-	+	2	69
-	+	22	22
-	+	17	19
-	+	18	7
-	+	20	19
-	+	14	0
 
 > ~/send_random_card
 	"	1	0

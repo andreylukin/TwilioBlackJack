@@ -144,3 +144,282 @@ python incoming_message.py
 sudo shutdown -r now
 ./ngrok http 5000
 ./ngrok http 5000
+apt-get update
+ls
+vim ri
+vim receive_sms.py 
+vim incoming_message.py 
+rm receive_sms.py 
+rm send_sms.py 
+vim incoming_message.py 
+python incoming_message.py 
+ls
+vim incoming_message.py 
+python incoming_message.py 
+ls
+vim incoming_message.py 
+python incoming_message.py 
+vim incoming_message.py 
+python incoming_message.py 
+python -version
+python --version
+ls
+vim incoming_message.py 
+mv incoming_message.py sms_reply.py
+vim send_sms.py
+python send_sms.py 
+vim send_sms.py 
+python send_sms.py 
+vim send_sms.py 
+python send_sms.py 
+python sms_reply.py 
+ls
+mv sms_reply.py recieve_sms.py
+mv recieve_sms.py receive_sms.py
+vim receive_sms.py 
+python receive_sms.py 
+ls
+vim receive_sms.py 
+python receive_sms.py 
+vim send_sms.py 
+python send_sms.py 
+mv receive_sms.py respond_sms.py
+git pull
+git push origin master
+vim respond_sms.py 
+python respond_sms.py 
+vim respond_sms.py 
+python respond_sms.py 
+vim respond_sms.py 
+python respond_sms.py 
+vim redditapi.py
+python redditapi.py
+vim redditapi.py
+python redditapi.py
+vim redditapi.py
+python redditapi.py
+vim redditapi.py
+python redditapi.py
+vim redditapi.py
+python redditapi.py
+vim redditapi.py
+python redditapi.py
+vim redditapi.py
+python redditapi.py
+vim redditapi.py
+python redditapi.py 
+vim redditapi.py
+python redditapi.py 
+vim redditapi.py
+python redditapi.py 
+ls
+vim respond_sms.py 
+vim redditapi.py 
+vim re
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim re
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim redditapi.py 
+python redditapi.py 
+vim send_sms.py 
+python send_sms.py 
+vim send_sms.py 
+vim send_
+vim send_sms.py 
+python send_sms.py 
+vim send_sms.py 
+python send_sms.py 
+vim send_sms.py 
+python send_sms.py 
+vim send_sms.py 
+python send_sms.py 
+python send_random_card.py 
+vim send_random_card.py 
+git status
+git add .
+git commit -m "Made a random card generator"
+git push origin master
+vim send_random_card
+mv send_random_card send_random_card.py
+vim respond_sms.py 
+vim send_random_card.py 
+python send_random_card.py 
+vim send_random_card.py 
+python send_random_card.py 
+vim send_random_card.py 
+python send_random_card.py 
+vim send_random_card.py 
+python send_random_card.py 
+vim send_random_card.py 
+python send_random_card.py 
+vim send_random_card.py 
+python send_random_card.py 
+vim send_random_card.py 
+python send_random_card.py 
+ls
+vim respond_sms.py 
+./ngrok http 5000
+vim psqltry.py
+python psqltry.py 
+pip install flask_sqlalchemy
+python psqltry.py 
+sudo apt-get update
+sudo apt-get install postgresql postgresql-contrib
+sudo -i -u postgres
+sudo -u blackjack psql
+sudo adduser blackjack
+sudo -u blackjack psql
+passwd blackjack
+vim app.py 
+ls
+rm app.py
+rm y
+ls
+vim y.pub 
+rm config.py 
+ls
+rm app.pyc 
+ls
+rm models.py
+rm models.pyc 
+ls
+vim pythonpsql.py
+python pythonpsql.py 
+su blackjack
+sudo userdel blackjack 
+sudo rm -rf /home/blackjack/
+createuser matt -P --interactive
+createuser blackjack -P --interactive
+sudo -i -u postgres
+sudo apt-get --purge remove postgresql
+sudo apt-get install postgresql libpq-dev postgresql-client postgresql-client-common
+sudo -i -u postgres
+createdb jack
+su jack
+useradd jack
+su jack
+passwd jack
+su jack
+ls
+vim respond_sms.py 
+vim send_
+vim send_random_card.py 
+vim psqltry.py 
+python send_random_card.py 
+python psqltry.py 
+vim config.py
+pip install -U psycopg2
+vim config.py
+vim app.py
+rm psqltry.py 
+python app.py 
+vim app.py
+python app.py 
+vim app.py
+python app.py 
+vim config.py 
+models.py
+vim mode
+vim models.py
+pip install ipython
+ipython
+vim models.py
+ipython
+vim models.py
+ipython
+su psql
+su blackjack
+ls
+vim pythonpsql.py 
+python pythonpsql.py 
+ls
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pt
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pythonpsql.py 
+su jack
+vim pythonpsql.py 
+python pythonpsql.py 
+python send_random_card.py 
+python pythonpsql.py 
+python send_random_card.py 
+./ngrok http 5000
+clear
+ls
+python pythonpsql.py 
+vim pythonpsql.py 
+vim send_random_card.py 
+python send_random_card.py 
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pythonpsql.py 
+python pythonpsql.py 
+python send_random_card.py 
+vim pythonpsql.py 
+python send_random_card.py 
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pythonpsql.py 
+python pythonpsql.py 
+vim pythonpsql.py 
+python send_random_card.py 
+clear
+ls
+vim send_random_card.py 
+python send_random_card.py 
+vim send_random_card.py 
+python send_random_card.py 
+vim send_random_card.py 
+clear
+vim send_random_card.py 
+su jack
+./ngrok http 5000
+vim send_random_card.py 
+python send_random_card.py 
+su jack
