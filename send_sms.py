@@ -2,12 +2,12 @@ import os
 from twilio.rest import Client
 
 
-account_sid = "ACbe66967292816dd95aa89c4113e8a7d3"
-auth_token = "20d83c1c9f1960831e026b8d351503fe"
+account_sid = "XXXXXXXX"
+auth_token = "XXXXXXXXX"
 
-aaki = "+17702625690"
-justin = "+15085966499"
-keshav = "+16319213220"
+aaki = "+XXXXXX"
+justin = "+XXXXXX"
+keshav = "+XXXXXXXX"
 client = Client(account_sid, auth_token)
 
 client.messages.create(
